@@ -1,0 +1,83 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn,  img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+ u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+
+	
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 500px;
+    align-items: center;
+    justify-items: center;
+
+  
+}
+.segundoContenedor{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 22%;
+    height: 350px;
+    background-color:#b8fafa;
+    border-radius: 25px;
+
+}
+
+.calculadora {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr; 
+grid-template-rows: 40px 50px 1fr;
+align-items: center;
+justify-items: center;
+width: 95%;
+
+padding-bottom: 10px;
+
+}
+
+.tituloCalculadora {
+grid-column-start: 1;
+grid-column-end: 5;
+align-self: center;
+}
+.tituloCalculadora h1{
+font-size: 25px;
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+}
+
+.input-calculadora{
+grid-column-start: 1;
+grid-column-end: 5;
+width: 80%;
+}
+.input-calculadora input{
+width: 100%;
+border-radius: 3px;
+}
+
+.contenedor-botones{
+grid-column-start: 1;
+grid-column-end: 5;
+width: 95%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 40px 40px 40px  40px;
+grid-gap: 2px;
+
+}
